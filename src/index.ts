@@ -1,12 +1,13 @@
 #!/usr/bin/env node
-import 'zx/globals';
 import { createCommand } from 'commander';
-import updateNotifier from 'update-notifier';
 import nodeCleanup from 'node-cleanup';
-import { description, version, name } from '../package.json';
+import updateNotifier from 'update-notifier';
+import { description, name, version } from '../package.json';
+import 'zx/globals';
 
-const ensureWorkingDirectoryClean = () =>
-  import('@/utils/git').then((v) => v.ensureWorkingDirectoryClean());
+function ensureWorkingDirectoryClean() {
+  return import('@/utils/git').then((v) => v.ensureWorkingDirectoryClean());
+}
 
 const startAt = Date.now();
 nodeCleanup((exitCode) =>

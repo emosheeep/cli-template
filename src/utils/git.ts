@@ -15,9 +15,9 @@ export async function isWorkingDirectoryClean(options: ExecOptions = {}) {
 export async function ensureWorkingDirectoryClean() {
   if (!(await isWorkingDirectoryClean({ verbose: true }))) {
     await question(
-      '\n' +
-        chalk.cyan('→') +
-        ' Working directory is not clean, press enter to continue ↩︎. ',
+      `\n${chalk.cyan(
+        '→',
+      )} Working directory is not clean, press enter to continue ↩︎. `,
     );
   }
 }

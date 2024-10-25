@@ -1,4 +1,4 @@
-# Cli Template 
+# Cli Template
 This is a modern Command-Line-Tool template repository base on Node.js. You can quickly set up your cli apps with this project.
 
 ## Quick Start
@@ -29,7 +29,6 @@ Please read the documentations of these useful tools before developing, which av
 - and so do the other tools you'll develop with, please read the docs by yourself.
 
 Here are some [command-line-apps](https://github.com/sindresorhus/awesome-nodejs?tab=readme-ov-file#command-line-apps) and [command-line-utilities](https://github.com/sindresorhus/awesome-nodejs?tab=readme-ov-file#command-line-utilities) you probably use, which are really wonderful.
-
 
 ## Contribution
 
